@@ -11,7 +11,7 @@ export default function Header() {
           <div className="title link row">
             <div className="col-4 col-md-1">
               <img
-                src={data.headerSrc[language]}
+                src={`${process.env.assetPrefix}${data.headerSrc[language]}`}
                 className="img-fluid"
                 alt="banner"
               />
