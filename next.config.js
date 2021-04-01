@@ -16,7 +16,6 @@ const config = {
   env: {
     assetPrefix: "",
   },
-  distDir: "out",
 };
 
 const mode = process.env.MODE ? process.env.MODE.trim() : null;

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { data } from "../data/data.js";
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 
 export default function Home({}) {
   let language = "en";
@@ -14,7 +13,7 @@ export default function Home({}) {
       </Head>
 
       <main>
-        <Image
+        <img
           src={`${process.env.assetPrefix}${data.headerSrc[language]}`}
           alt="Banner"
           width={1920}
