@@ -1,3 +1,5 @@
+import Kickstarter from "../Components/Content/Kickstarter";
+
 export const pages = {
   home: {
     slug: "",
@@ -11,11 +13,7 @@ export const pages = {
   kickstarter: {
     slug: "kickstarter",
     title: "Kickstarter",
-    content: (
-      <div>
-        <p>hi</p>
-      </div>
-    ),
+    content: <Kickstarter />,
   },
   smutcomic1: {
     slug: "smutcomic1",
