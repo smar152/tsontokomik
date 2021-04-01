@@ -3,13 +3,19 @@ import DesktopNavigation from "./DesktopNavigation.js";
 import PhoneNavigation from "./PhoneNavigation.js";
 import { data } from "../data/data.js";
 
-export default function PageLayout({ pageTitle, pageSubtitle, pageContent }) {
+export default function PageLayout({
+  pageTitle,
+  pageSubtitle,
+  pageContent,
+  kati,
+}) {
   let language = "en";
   const title = data.title[language];
   return (
     <div className="container">
       <div className="row">
         <div className="col">
+          <h1>{kati}</h1>
           <Header />
         </div>
       </div>

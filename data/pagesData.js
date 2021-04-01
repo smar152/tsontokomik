@@ -45,6 +45,10 @@ export const pages = {
   faq: {
     slug: "faq",
     title: "FAQ",
+    kati: {
+      en: "FAQ",
+      el: "ΦΑΚ",
+    },
     content: (
       <div>
         <div className="faq">Πώς γυναίκες;!</div>
