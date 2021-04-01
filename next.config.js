@@ -21,7 +21,7 @@ const config = {
 const mode = process.env.MODE ? process.env.MODE.trim() : null;
 
 if (mode === "GITHUB") {
-  const prefix = "/heypano-next";
+  const prefix = "/tsontokomik";
   console.log("Adding github parameters basePath and assetPrefix");
   config.basePath = prefix;
   config.assetPrefix = `${prefix}/`;
