@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[9],{RNiq:function(n,u,i){"use strict";i.r(u),i.d(u,"default",(function(){return o}));var t=i("nKUr"),_=i("jEa9");function o(){return Object(t.jsx)(_.a,{language:"el"})}},vlRD:function(n,u,i){(window.__NEXT_P=window.__NEXT_P||[]).push(["/",function(){return i("RNiq")}])}},[["vlRD",0,2,1,3]]]);
