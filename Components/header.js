@@ -1,28 +1,30 @@
 import Link from "next/link";
-import { data } from "../data/data.js";
+import messages from "../data/headerStrings";
+import { getMessage } from "../data/util";
 
-export default function Header() {
-  let language = "en";
-  const title = data.title[language];
-  const subtitle = data.subtitle[language];
+const Header = ({ language }) => {
+  const s = (key) => {
+    console.log(language, messages);
+    return getMessage(key, messages, language);
+  };
   return (
     <div className="header">
       <Link as="/" href="/">
         <div>
           <div className="title link row">
             <div className="col-4 col-md-1">
-              {/*<img*/}
-              {/*  src={`${process.env.assetPrefix}${data.headerSrc[language]}`}*/}
-              {/*  className="img-fluid"*/}
-              {/*  alt="banner"*/}
-              {/*/>*/}
+              <img
+                src={`${process.env.assetPrefix}${s("headerSrc")}`}
+                className="img-fluid"
+                alt="banner"
+              />
             </div>
             <div className="col-8 col-md-11">
-              <h1>{title}</h1>
+              <h1>{s("title")}</h1>
             </div>
           </div>
           <hr />
-          <p className="description">{subtitle}</p>
+          <p className="description">{s("subtitle")}</p>
           <hr />
         </div>
       </Link>
@@ -39,4 +41,6 @@ export default function Header() {
       </style>
     </div>
   );
-}
+};
+
+export default Header;

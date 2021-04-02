@@ -1,24 +1,19 @@
 import Header from "./header.js";
 import DesktopNavigation from "./DesktopNavigation.js";
 import PhoneNavigation from "./PhoneNavigation.js";
-import { data } from "../data/data.js";
 import * as React from "react";
 
 export default function PageLayout({
   component: Component,
   pageTitle,
   pageSubtitle,
-  pageContent,
-  kati,
+  language,
 }) {
-  let language = "en";
-  const title = data.title[language];
   return (
     <div className="container">
       <div className="row">
         <div className="col">
-          <h1>{kati}</h1>
-          <Header />
+          <Header language={language} />
         </div>
       </div>
       <div className="row">
@@ -26,7 +21,9 @@ export default function PageLayout({
           <DesktopNavigation
             currentPageTitle={pageTitle}
             className="d-none d-md-block"
-          />
+          >
+            afdf
+          </DesktopNavigation>
           <div className="phoneNav">
             <PhoneNavigation
               currentPageTitle={pageTitle}
