@@ -4,6 +4,7 @@ import { data } from "../data/data.js";
 export default function Header() {
   let language = "en";
   const title = data.title[language];
+  const subtitle = data.subtitle[language];
   return (
     <div className="header">
       <Link as="/" href="/">
@@ -21,7 +22,7 @@ export default function Header() {
             </div>
           </div>
           <hr />
-          <p className="description">Συμβουλευτική – Οργάνωση – Δημιουργία </p>
+          <p className="description">{subtitle}</p>
           <hr />
         </div>
       </Link>
