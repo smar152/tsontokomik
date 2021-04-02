@@ -8,15 +8,15 @@ export default function MenuLinks({ currentPageTitle, closeMenu }) {
     <>
       {menuItems.map((e, index) => (
         <div key={index} onClick={closeMenu}>
-          <Link as={`/${pages[e].slug}`} href={`/${pages[e].slug}`}>
-            <div
-              className={`link mb-2 d-flex flex-row align-items-center  ${
-                currentPageTitle === pages[e].title ? "current" : ""
-              }`}
-            >
-              <div>{pages[e].title}</div>
-            </div>
-          </Link>
+          {/*<Link as={`/${pages[e].slug}`} href={`/${pages[e].slug}`}>*/}
+          {/*  <div*/}
+          {/*    className={`link mb-2 d-flex flex-row align-items-center  ${*/}
+          {/*      currentPageTitle === pages[e].title ? "current" : ""*/}
+          {/*    }`}*/}
+          {/*  >*/}
+          {/*    <div>{pages[e].title}</div>*/}
+          {/*  </div>*/}
+          {/*</Link>*/}
         </div>
       ))}
 

@@ -2,8 +2,10 @@ import Header from "./header.js";
 import DesktopNavigation from "./DesktopNavigation.js";
 import PhoneNavigation from "./PhoneNavigation.js";
 import { data } from "../data/data.js";
+import * as React from "react";
 
 export default function PageLayout({
+  component: Component,
   pageTitle,
   pageSubtitle,
   pageContent,
@@ -35,7 +37,7 @@ export default function PageLayout({
         <div className="col-12 col-md-9 content">
           <h2>{pageTitle}</h2>
           <h6>{pageSubtitle}</h6>
-          {pageContent}
+          {React.isValidElement(Component) && Component}
         </div>
       </div>
 

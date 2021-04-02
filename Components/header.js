@@ -11,11 +11,11 @@ export default function Header() {
         <div>
           <div className="title link row">
             <div className="col-4 col-md-1">
-              <img
-                src={`${process.env.assetPrefix}${data.headerSrc[language]}`}
-                className="img-fluid"
-                alt="banner"
-              />
+              {/*<img*/}
+              {/*  src={`${process.env.assetPrefix}${data.headerSrc[language]}`}*/}
+              {/*  className="img-fluid"*/}
+              {/*  alt="banner"*/}
+              {/*/>*/}
             </div>
             <div className="col-8 col-md-11">
               <h1>{title}</h1>

@@ -1,8 +1,16 @@
-const Faq = (props) => (
-  <div>
-    <div className="faq">Πώς γυναίκες;!</div>
-    <div className="faa">Κι όμως!</div>
-  </div>
-);
+import messages from "../../data/faqStrings";
+import { getMessage } from "../../data/util";
 
-export default Faq;
+const FAQ = ({ language }) => {
+  const s = (key) => {
+    return getMessage(key, messages, language);
+  };
+  return (
+    <div>
+      <div className="faq">{s("howwomen")}</div>
+      <div className="faa">{s("andbut")}</div>
+    </div>
+  );
+};
+
+export default FAQ;
