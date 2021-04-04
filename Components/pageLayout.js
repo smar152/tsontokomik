@@ -21,6 +21,7 @@ export default function PageLayout({
           <DesktopNavigation
             currentPageTitle={pageTitle}
             className="d-none d-md-block"
+            language={language}
           >
             afdf
           </DesktopNavigation>
@@ -28,6 +29,7 @@ export default function PageLayout({
             <PhoneNavigation
               currentPageTitle={pageTitle}
               className="d-md-none d-block"
+              language={language}
             />
           </div>
         </div>

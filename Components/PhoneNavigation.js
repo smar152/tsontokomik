@@ -1,7 +1,7 @@
 import MenuLinks from "./menuLinks.js";
 import { useState } from "react";
 
-export default function PhoneNavigation() {
+export default function PhoneNavigation({ language }) {
   const [isOpen, setOpen] = useState(false);
 
   const closeMenu = () => {
@@ -31,7 +31,7 @@ export default function PhoneNavigation() {
           isOpen ? "active d-flex flex-column" : "d-none"
         }`}
       >
-        <MenuLinks closeMenu={closeMenu} />
+        <MenuLinks closeMenu={closeMenu} language={language} />
       </div>
     </>
   );

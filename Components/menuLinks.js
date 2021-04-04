@@ -23,7 +23,7 @@ export default function MenuLinks({ currentPageTitle, closeMenu, language }) {
                   currentPageTitle === s(e, "title") ? "current" : ""
                 }`}
               >
-                <div>a{s(e, "title")}</div>
+                <div>{s(e, "title")}</div>
               </div>
             </Link>
           </div>
