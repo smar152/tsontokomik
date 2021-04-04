@@ -4,7 +4,6 @@ import { getMessage } from "../data/util";
 
 const Header = ({ language }) => {
   const s = (key) => {
-    console.log(language, messages);
     return getMessage(key, messages, language);
   };
   return (
@@ -12,15 +11,12 @@ const Header = ({ language }) => {
       <Link as="/" href="/">
         <div>
           <div className="title link row">
-            <div className="col-4 col-md-1">
+            <div className="col-6">
               <img
                 src={`${process.env.assetPrefix}${s("headerSrc")}`}
                 className="img-fluid"
                 alt="banner"
               />
-            </div>
-            <div className="col-8 col-md-11">
-              <h1>{s("title")}</h1>
             </div>
           </div>
           <hr />
