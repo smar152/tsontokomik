@@ -1,8 +1,10 @@
 import Link from "next/link";
 import messages from "../data/headerStrings";
 import { getMessage } from "../data/util";
+import DesktopNavigation from "./DesktopNavigation";
+import PhoneNavigation from "./PhoneNavigation";
 
-const Header = ({ language }) => {
+const Header = ({ pageTitle, pageSubtitle, language }) => {
   const s = (key) => {
     return getMessage(key, messages, language);
   };
@@ -11,12 +13,20 @@ const Header = ({ language }) => {
       <Link as="/" href="/">
         <div>
           <div className="title link row">
-            <div className="col-6">
-              <img
-                src={`${process.env.assetPrefix}${s("headerSrc")}`}
-                className="img-fluid"
-                alt="banner"
+            <div className="col-12 col-md-4">Hey</div>
+            <div className="col-8">
+              <DesktopNavigation
+                currentPageTitle={pageTitle}
+                className="d-none d-md-block"
+                language={language}
               />
+              <div className="phoneNav">
+                <PhoneNavigation
+                  currentPageTitle={pageTitle}
+                  className="d-md-none d-block"
+                  language={language}
+                />
+              </div>
             </div>
           </div>
           <hr />

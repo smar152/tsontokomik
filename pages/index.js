@@ -34,38 +34,6 @@ export default function PageContainer() {
 //         <p>Smar made this</p>
 //       </footer>
 //
-//       <style global jsx>
-//         {`
-//           html {
-//             margin-left: calc(100vw - 100%);
-//           }
-//           body {
-//             background-color: #fc9bb3;
-//             font-family: Verdana, Geneva, sans-serif;
-//             color: #3e3e3e;
-//           }
-//           .container {
-//             padding-top: 60px;
-//           }
-//           h6 {
-//             font-style: italic;
-//           }
-//           .card {
-//             background-color: #f1f1f1;
-//             border-color: #f1f1f1;
-//           }
-//           .floatingImage {
-//             float: right;
-//           }
-//           .content {
-//             margin-bottom: 70px;
-//             padding-left: 0px;
-//           }
-//           .link {
-//             cursor: pointer;
-//           }
-//         `}
-//       </style>
 //     </div>
 //   );
 // }

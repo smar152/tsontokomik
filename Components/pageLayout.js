@@ -1,6 +1,4 @@
-import Header from "./header.js";
-import DesktopNavigation from "./DesktopNavigation.js";
-import PhoneNavigation from "./PhoneNavigation.js";
+import Header from "./Header.js";
 import * as React from "react";
 
 export default function PageLayout({
@@ -17,22 +15,6 @@ export default function PageLayout({
         </div>
       </div>
       <div className="row">
-        <div className="col-12 col-md-3">
-          <DesktopNavigation
-            currentPageTitle={pageTitle}
-            className="d-none d-md-block"
-            language={language}
-          >
-            afdf
-          </DesktopNavigation>
-          <div className="phoneNav">
-            <PhoneNavigation
-              currentPageTitle={pageTitle}
-              className="d-md-none d-block"
-              language={language}
-            />
-          </div>
-        </div>
         <div className="col-12 col-md-9 content">
           <h2>{pageTitle}</h2>
           <h6>{pageSubtitle}</h6>
