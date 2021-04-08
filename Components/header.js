@@ -13,8 +13,14 @@ const Header = ({ pageTitle, pageSubtitle, language }) => {
       <Link as="/" href="/">
         <div>
           <div className="title link row">
-            <div className="col-12 col-md-4">Hey</div>
-            <div className="col-8">
+            <div className="col-12 col-md-3">
+              <img
+                src={`${process.env.assetPrefix}${s("logoSrc")}`}
+                className="img-fluid"
+                alt="banner"
+              />
+            </div>
+            <div className="col-9">
               <DesktopNavigation
                 currentPageTitle={pageTitle}
                 className="d-none d-md-block"

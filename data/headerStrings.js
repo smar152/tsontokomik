@@ -11,6 +11,10 @@ const messages = {
     el: "/img/fb-banner.jpg",
     en: "/img/fb-banner-eng.jpg",
   },
+  logoSrc: {
+    el: "/img/tsontokomik-logo.svg",
+    en: "/img/smutcomic-logo.svg",
+  },
 };
 
 export default messages;
