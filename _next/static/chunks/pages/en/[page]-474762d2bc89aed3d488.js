@@ -1,1 +1,0 @@
-_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[8],{"4Dh+":function(n,u,e){"use strict";e.r(u),e.d(u,"default",(function(){return o}));var t=e("nKUr"),_=e("jEa9");function o(){return Object(t.jsx)(_.a,{language:"en"})}},nTUb:function(n,u,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/en/[page]",function(){return e("4Dh+")}])}},[["nTUb",0,2,1,3]]]);
