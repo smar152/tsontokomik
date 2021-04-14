@@ -14,7 +14,7 @@ const config = {
       "/": { page: "/" },
     };
     slugs.forEach((slug) => {
-      paths[slug] = { page: "[page]" };
+      paths[slug] = { page: "/[page]" };
       paths[`/en${slug}`] = { page: "/en/[page]" };
     });
     return paths;

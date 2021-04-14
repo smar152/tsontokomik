@@ -3,6 +3,8 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { getPageData, getPageTitle } from "../data/pagesData";
 import { getComponent } from "../data/componentMap";
+// add bootstrap css
+import "bootstrap/dist/css/bootstrap.css";
 
 export default function Page({ language }) {
   const router = useRouter();

@@ -1,6 +1,4 @@
 import Page from "../Components/Page";
-// add bootstrap css
-import "bootstrap/dist/css/bootstrap.css";
 
 export default function PageContainer() {
   return <Page language="el"></Page>;
