@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { pages } from "../data/pagesData.js";
 import { getMessage } from "../data/util";
+import LanguageContext from "../contexts/LanguageContext";
+import { useContext } from "react";
 
-const MenuItem = ({ onClick, url, isCurrent, children }) => (
+const MenuItem = ({ onClick, url = "", isCurrent, children }) => (
   <span onClick={onClick}>
     <Link href={url}>
       <span className={`link ${isCurrent ? "current" : ""}`}>
@@ -14,6 +16,7 @@ const MenuItem = ({ onClick, url, isCurrent, children }) => (
 
 export default function MenuLinks({ currentPageTitle, closeMenu, language }) {
   const menuItems = Object.keys(pages).filter((p) => p !== "home");
+  const languageFromContext = useContext(LanguageContext);
   const s = (pageKey, stringKey) => {
     return getMessage(stringKey, pages[pageKey], language);
   };
@@ -31,6 +34,7 @@ export default function MenuLinks({ currentPageTitle, closeMenu, language }) {
           </MenuItem>
         );
       })}
+      <MenuItem onClick={() => {}}>{languageFromContext}</MenuItem>
 
       <style jsx>
         {`
