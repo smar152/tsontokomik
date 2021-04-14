@@ -2,6 +2,16 @@ import Link from "next/link";
 import { pages } from "../data/pagesData.js";
 import { getMessage } from "../data/util";
 
+const MenuItem = ({ onClick, url, isCurrent, children }) => (
+  <span onClick={onClick}>
+    <Link href={url}>
+      <span className={`link ${isCurrent ? "current" : ""}`}>
+        <span>{children}</span>
+      </span>
+    </Link>
+  </span>
+);
+
 export default function MenuLinks({ currentPageTitle, closeMenu, language }) {
   const menuItems = Object.keys(pages).filter((p) => p !== "home");
   const s = (pageKey, stringKey) => {
@@ -9,19 +19,16 @@ export default function MenuLinks({ currentPageTitle, closeMenu, language }) {
   };
   return (
     <>
-      {menuItems.map((e, index) => {
+      {menuItems.map((key, index) => {
         return (
-          <span key={index} onClick={closeMenu}>
-            <Link as={`/${pages[e].slug}`} href={`/${pages[e].slug}`}>
-              <span
-                className={`link ${
-                  currentPageTitle === s(e, "title") ? "current" : ""
-                }`}
-              >
-                <span>{s(e, "title")}</span>
-              </span>
-            </Link>
-          </span>
+          <MenuItem
+            key={index}
+            onClick={closeMenu}
+            url={`/${pages[key].slug}`}
+            isCurrent={currentPageTitle === s(key, "title")}
+          >
+            {s(key, "title")}
+          </MenuItem>
         );
       })}
 
