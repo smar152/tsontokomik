@@ -1,4 +1,4 @@
-import MenuLinks from "./menuLinks.js";
+import MenuLinks from "./MenuLinks.js";
 
 export default function DesktopNavigation({ currentPageTitle, language }) {
   return (

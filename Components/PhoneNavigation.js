@@ -1,4 +1,4 @@
-import MenuLinks from "./menuLinks.js";
+import MenuLinks from "./MenuLinks.js";
 import { useState } from "react";
 
 export default function PhoneNavigation({ language }) {
