@@ -1,37 +1,47 @@
-import Page from "../Components/Page";
+import * as React from "react";
 
-export default function PageContainer() {
-  return <Page language="el"></Page>;
+import { useRouter } from "next/router";
+// add bootstrap css
+import "bootstrap/dist/css/bootstrap.css";
+
+export default function Home() {
+  return (
+    <div class="container-fluid homeFull">
+      <h2 class="d-flex justify-content-center ">Τσοντοκόμικ</h2>
+      <h2 class="d-flex justify-content-center ">coming... soon</h2>
+      <style global jsx>
+        {`
+          .homeFull {
+            height: 100vh;
+          }
+
+          html {
+            margin-left: calc(100vw - 100%);
+          }
+          body {
+            font-family: Verdana, Geneva, sans-serif;
+             {
+              /* color: #3e3e3e; */
+            }
+
+            background: linear-gradient(
+              180deg,
+              #fc9bb3 0%,
+              rgba(252, 155, 179, 0) 100%
+            );
+          }
+
+          svg {
+            height: 30px;
+            cursor: pointer;
+            animation: rotation 2s infinite linear;
+          }
+
+          .content {
+            margin-bottom: 70px;
+          }
+        `}
+      </style>
+    </div>
+  );
 }
-
-// import Head from "next/head";
-// import { data } from "../data/data.js";
-// import React, { useEffect, useState } from "react";
-//
-// export default function Home({}) {
-//   let language = "en";
-//   const title = data.title[language];
-//   return (
-//     <div className="container">
-//       <Head>
-//         <title>{title}</title>
-//         <link rel="icon" href="/favicon.ico" />
-//       </Head>
-//
-//       <main>
-//         <img
-//           src={`${process.env.assetPrefix}${data.headerSrc[language]}`}
-//           alt="Banner"
-//           width={1920}
-//           height={843}
-//         />
-//         <h1>{title}</h1>
-//       </main>
-//
-//       <footer>
-//         <p>Smar made this</p>
-//       </footer>
-//
-//     </div>
-//   );
-// }
