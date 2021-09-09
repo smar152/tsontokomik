@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Lack";
+  src: url("/fonts/Lack-Regular.otf");
+}
+
+@font-face {
+  font-family: "Lack";
+  src: url("/fonts/Lack-Italic.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Lack Line";
+  src: url("/fonts/Lack-Line-Regular.otf");
+}
+
+@font-face {
+  font-family: "Lack Line";
+  src: url("/fonts/Lack-Line-Italic.otf");
+  font-style: italic;
+}
+
+body {
+  font-family: "Lack", sans-serif !important;
+}

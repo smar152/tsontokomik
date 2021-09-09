@@ -16,28 +16,6 @@ export default function Home() {
       <h1 className="pt-4">coming... soon!</h1>
       <style global jsx>
         {`
-          @font-face {
-            font-family: "Lack", sans-serif;
-            src: url("/fonts/Lack-Regular.otf") format("opentype");
-          }
-
-          @font-face {
-            font-family: "Lack", sans-serif;
-            src: url("/fonts/Lack-Italic.otf") format("opentype");
-            font-style: italic;
-          }
-
-          @font-face {
-            font-family: "Lack Line", sans-serif;
-            src: url("/fonts/Lack-Line-Regular.otf") format("opentype");
-          }
-
-          @font-face {
-            font-family: "Lack Line", sans-serif;
-            src: url("/fonts/Lack-Line-Italic.otf") format("opentype");
-            font-style: italic;
-          }
-
           .homeFull {
             height: 100vh;
           }
@@ -55,8 +33,6 @@ export default function Home() {
             margin-left: calc(100vw - 100%);
           }
           body {
-            font-family: "Lack", Verdana, Geneva, sans-serif;
-
             background: linear-gradient(
               180deg,
               #fc9bb3 0%,
