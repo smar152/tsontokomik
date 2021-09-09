@@ -6,13 +6,28 @@ import "bootstrap/dist/css/bootstrap.css";
 
 export default function Home() {
   return (
-    <div class="container-fluid homeFull">
-      <h2 class="d-flex justify-content-center ">Τσοντοκόμικ</h2>
-      <h2 class="d-flex justify-content-center ">coming... soon</h2>
+    <div className="container-fluid homeFull d-flex flex-column justify-content-center align-items-center">
+      <img
+        src={`${process.env.assetPrefix}/img/tsontokomik-logo.svg`}
+        className="img-fluid comingSoonLogo"
+        alt="banner"
+      />
+
+      <h2 className=" ">coming... soon</h2>
       <style global jsx>
         {`
           .homeFull {
             height: 100vh;
+          }
+          .comingSoonLogo {
+            filter: invert(2);
+            width: 50%;
+          }
+
+          @media only screen and (max-width: 600px) {
+            .comingSoonLogo {
+              width: 100%;
+            }
           }
 
           html {
