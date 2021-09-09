@@ -55,10 +55,7 @@ export default function Home() {
             margin-left: calc(100vw - 100%);
           }
           body {
-            font-family: Lack, Verdana, Geneva, sans-serif;
-             {
-              /* color: #3e3e3e; */
-            }
+            font-family: "Lack", Verdana, Geneva, sans-serif;
 
             background: linear-gradient(
               180deg,
