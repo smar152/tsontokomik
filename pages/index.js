@@ -18,23 +18,23 @@ export default function Home() {
         {`
           @font-face {
             font-family: "Lack", sans-serif;
-            src: url("fonts/Lack-Regular.otf") format("opentype");
+            src: url("/fonts/Lack-Regular.otf") format("opentype");
           }
 
           @font-face {
             font-family: "Lack", sans-serif;
-            src: url("fonts/Lack-Italic.otf") format("opentype");
+            src: url("/fonts/Lack-Italic.otf") format("opentype");
             font-style: italic;
           }
 
           @font-face {
             font-family: "Lack Line", sans-serif;
-            src: url("fonts/Lack-Line-Regular.otf") format("opentype");
+            src: url("/fonts/Lack-Line-Regular.otf") format("opentype");
           }
 
           @font-face {
             font-family: "Lack Line", sans-serif;
-            src: url("fonts/Lack-Line-Italic.otf") format("opentype");
+            src: url("/fonts/Lack-Line-Italic.otf") format("opentype");
             font-style: italic;
           }
 
