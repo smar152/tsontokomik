@@ -8,19 +8,40 @@ export default function Home() {
   return (
     <div className="container-fluid homeFull d-flex flex-column justify-content-center align-items-center">
       <img
-        src={`${process.env.assetPrefix}/img/tsontokomik-logo.svg`}
+        src={`${process.env.assetPrefix}/img/tsontokomik-logo-white.svg`}
         className="img-fluid comingSoonLogo"
         alt="banner"
       />
 
-      <h2 className=" ">coming... soon</h2>
+      <h1 className="pt-4">coming... soon!</h1>
       <style global jsx>
         {`
+          @font-face {
+            font-family: "Lack", sans-serif;
+            src: url(fonts/Lack-Regular.otf) format("opentype");
+          }
+
+          @font-face {
+            font-family: "Lack", sans-serif;
+            src: url(fonts/Lack-Italic.otf) format("opentype");
+            font-style: italic;
+          }
+
+          @font-face {
+            font-family: "Lack Line", sans-serif;
+            src: url(fonts/Lack-Line-Regular.otf) format("opentype");
+          }
+
+          @font-face {
+            font-family: "Lack Line", sans-serif;
+            src: url(fonts/Lack-Line-Italic.otf) format("opentype");
+            font-style: italic;
+          }
+
           .homeFull {
             height: 100vh;
           }
           .comingSoonLogo {
-            filter: invert(2);
             width: 50%;
           }
 
@@ -34,7 +55,7 @@ export default function Home() {
             margin-left: calc(100vw - 100%);
           }
           body {
-            font-family: Verdana, Geneva, sans-serif;
+            font-family: Lack, Verdana, Geneva, sans-serif;
              {
               /* color: #3e3e3e; */
             }
