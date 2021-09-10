@@ -17,7 +17,7 @@ export default function Home() {
       <h1 className="pt-4">coming... soon!</h1>
       <div className="pt-3 d-flex justify-content-around">
         <Link href="https://www.facebook.com/tsontokomik">
-          <a>
+          <a target="_blank">
             <img
               src={`${process.env.assetPrefix}/img/buttons/white-fb.svg`}
               className="socialButtons"
@@ -26,7 +26,7 @@ export default function Home() {
           </a>
         </Link>
         <Link href="https://www.instagram.com/tsontokomik/">
-          <a>
+          <a target="_blank">
             <img
               src={`${process.env.assetPrefix}/img/buttons/white-ig.svg`}
               className="socialButtons"
@@ -35,7 +35,7 @@ export default function Home() {
           </a>
         </Link>
         <Link href="https://twitter.com/tsontokomik">
-          <a>
+          <a target="_blank">
             <img
               src={`${process.env.assetPrefix}/img/buttons/white-twitter.svg`}
               className="socialButtons"
@@ -62,7 +62,9 @@ export default function Home() {
           .socialButtons {
             width: 50%;
           }
-
+          a {
+            text-align: center;
+          }
           html {
             margin-left: calc(100vw - 100%);
           }
