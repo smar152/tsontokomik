@@ -1,4 +1,5 @@
 import * as React from "react";
+import Link from "next/link";
 
 import { useRouter } from "next/router";
 // add bootstrap css
@@ -14,6 +15,35 @@ export default function Home() {
       />
 
       <h1 className="pt-4">coming... soon!</h1>
+      <div className="pt-3 d-flex justify-content-around">
+        <Link href="https://www.facebook.com/tsontokomik">
+          <a>
+            <img
+              src={`${process.env.assetPrefix}/img/buttons/white-fb.svg`}
+              className="socialButtons"
+              alt="facebok"
+            />
+          </a>
+        </Link>
+        <Link href="https://www.instagram.com/tsontokomik/">
+          <a>
+            <img
+              src={`${process.env.assetPrefix}/img/buttons/white-ig.svg`}
+              className="socialButtons"
+              alt="instagram"
+            />
+          </a>
+        </Link>
+        <Link href="https://twitter.com/tsontokomik">
+          <a>
+            <img
+              src={`${process.env.assetPrefix}/img/buttons/white-twitter.svg`}
+              className="socialButtons"
+              alt="twitter"
+            />
+          </a>
+        </Link>
+      </div>
       <style global jsx>
         {`
           .homeFull {
@@ -27,6 +57,10 @@ export default function Home() {
             .comingSoonLogo {
               width: 100%;
             }
+          }
+
+          .socialButtons {
+            width: 50%;
           }
 
           html {
